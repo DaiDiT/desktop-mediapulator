@@ -1,0 +1,6 @@
+build/
+dist/
+core/__pycache__
+ui/__pycache__
+main.spec
+script.iss

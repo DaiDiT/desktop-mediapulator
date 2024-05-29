@@ -7,6 +7,8 @@ from pydub.playback import _play_with_simpleaudio
 from core.audio_processor import *
 from ui.utils.file_utils import saveAudioFileDialog
 
+import os
+
 class AudioProcessingWindow(QWidget):
 	def __init__(self, parent=None, fileName=None):
 		super().__init__()
@@ -23,6 +25,9 @@ class AudioProcessingWindow(QWidget):
 		self.startTime = 0
 		self.playing = False
 		self.audio = None
+
+		AudioSegment.converter = '.\\third_party\\ffmpeg\\bin\\ffmpeg.exe'
+		AudioSegment.ffprobe = '.\\third_party\\ffmpeg\\bin\\ffprobe.exe'
 
 	def initUI(self):
 		mainLayout = QVBoxLayout()
