@@ -1,6 +1,6 @@
 from PyQt5.QtWidgets import QMainWindow, QPushButton, QVBoxLayout, QWidget, QFileDialog, QLabel
 from PyQt5.QtGui import QIcon
-from PyQt5.QtCore import Qt, QRect
+from PyQt5.QtCore import Qt
 from ui.image_processing_window import ImageProcessingWindow
 from ui.audio_processing_window import AudioProcessingWindow
 from ui.utils.file_utils import *

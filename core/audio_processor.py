@@ -1,4 +1,3 @@
-import numpy as np
 from pydub.utils import mediainfo
 
 from ui.utils.file_utils import getFileNameAndExtension

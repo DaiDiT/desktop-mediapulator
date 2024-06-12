@@ -1,4 +1,4 @@
-from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QVBoxLayout, QHBoxLayout, QLabel, QFileDialog, QSlider, QComboBox, QSpacerItem, QSizePolicy
+from PyQt5.QtWidgets import QWidget, QPushButton, QVBoxLayout, QHBoxLayout, QLabel, QSlider, QComboBox, QSpacerItem, QSizePolicy
 from PyQt5.QtGui import QIcon
 from PyQt5.QtCore import QTimer, Qt
 from pydub import AudioSegment
