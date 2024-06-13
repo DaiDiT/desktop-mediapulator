@@ -17,11 +17,7 @@ def resizeImage(image, width, height):
     return cv2.resize(image, dimension)
 
 def rotateImage(image, angle):
-    width = image.shape[1]
-    height = image.shape[0]
-    rotationMatrix = cv2.getRotationMatrix2D((width/2,height/2), angle, 1)
-
-    return cv2.warpAffine(image, rotationMatrix,(width,height))
+    return cv2.rotate(image, cv2.ROTATE_90_CLOCKWISE if angle == -90 else cv2.ROTATE_90_COUNTERCLOCKWISE)
 
 def flipImage(image, direction):
     return cv2.flip(image, 1) if direction == 'horizontal' else cv2.flip(image, 0)

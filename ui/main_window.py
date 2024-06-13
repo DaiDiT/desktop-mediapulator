@@ -50,6 +50,7 @@ class MainWindow(QMainWindow):
                 
     def processImage(self):
         filePath = openImageFileDialog(self)
+        print(filePath)
         
         if filePath:
             if self.imageProcessingWindow is not None:
@@ -66,6 +67,7 @@ class MainWindow(QMainWindow):
 
     def processAudio(self):
         filePath = openAudioFileDialog(self)
+        print(filePath)
         
         if filePath:
             if self.audioProcessingWindow is not None:

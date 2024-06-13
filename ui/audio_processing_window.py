@@ -98,8 +98,6 @@ class AudioProcessingWindow(QWidget):
 		self.stopButton.hide()
 		self.timeSlider.setMaximum((len(self.audioSegment)))
 
-		
-
 	def playAudio(self, audio):
 		self.audio = _play_with_simpleaudio(audio[self.startTime:])
 		self.timer.start(10)

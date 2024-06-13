@@ -1,6 +1,7 @@
 from pydub.utils import mediainfo
-
 from ui.utils.file_utils import getFileNameAndExtension
+
+import os
 
 def getBitRate(filePath):
 	audioInfo = mediainfo(filePath)
